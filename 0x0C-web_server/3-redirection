@@ -5,7 +5,7 @@
 sudo apt-get -y install nginx
 sudo bash -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'
 
-redirect="\n\tlocation /redirect_me {\n\t\treturn 301 https Move permanently}\n"
+redirect="\n\tlocation /redirect_me {\n\t\treturn 301 https//intranet.alxswe.com/projects/266}\n"
 
 sudo sed -i "53s|.*|$redirect|" /etc/nginx/sites-enabled/default
 
