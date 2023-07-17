@@ -1,0 +1,21 @@
+sudo ufw status
+# ensure tha it is inactive if its active, disable it
+sudo ufw fefault deny incoming connections
+#Default incomming policy changed to 'deny' (be sure to update your rules accordingly)
+
+sudo ufw default allow outgoing connections
+#Default outgoing policy changed to 'deny' (be sure to update your rules accordingly)
+sudo ufw allow 22/tcp
+#Rules updated
+#Rules updated (v6)
+sudo ufw allow  443/tcp
+#Rules updated
+#Rules updated (v6)
+sudo ufw allow 80/tcp
+#Rules updated
+#Rules updated (v6)
+sudo ufw enable
+#command may disrupt existing ssh connection. proceed with operation (y/n)
+#firewall is active and enable on system startup
+sudo ufw status
+#displays all active port
