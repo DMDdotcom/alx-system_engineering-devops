@@ -1,4 +1,4 @@
-#0x13. Firewall
+#0x13-firewall
 Tasks
 0. Block all incoming traffic but
 mandatory
@@ -14,11 +14,6 @@ Requirements:
         80 (HTTP)
     Share the ufw commands that you used in your answer file
 
-Repo:
-
-    GitHub repository: alx-system_engineering-devops
-    Directory: 0x13-firewall
-    File: 0-block_all_incoming_traffic_but
 
 1. Port forwarding
 #advanced
@@ -88,11 +83,4 @@ Accept-Ranges: bytes
 ubuntu@03-web-02:~$
 
 I use curl to query web-01.holberton.online, and since my firewall is forwarding the ports, I get a HTTP 200 response on port 80/TCP and also on port 8080/TCP.
-
-Repo:
-
-    GitHub repository: alx-system_engineering-devops
-    Directory: 0x13-firewall
-    File: 100-port_forwarding
-
 
